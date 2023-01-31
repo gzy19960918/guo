@@ -18,7 +18,7 @@ void contrast(char *s, table **t)
 		read(*t);
 	}else if(memcmp(s, "find", 4) == 0){
 		int i, j;
-		printf("Write down the indexes you would like to select.");
+		printf("Write down the indexes you would like to select.\n");
 		scanf("%d %d", &i, &j);
 		getchar();
 		find(*t, i, j);
@@ -74,9 +74,9 @@ void read(table *t)
 void find(table *t, int i, int j)
 {
 	if(i > t->record || j > t->attribute[i]){
-		printf("You select a bad index! Please use read to check it\n");
+		printf("You select a bad index! Please use read to check it.\n");
 		exit(0);
 	}
-	printf("The values you searched to is: %4d\n", t->val[i][j]);
+	printf("The values you searched to is:\n%4d\n", t->val[i][j]);
 }
 
