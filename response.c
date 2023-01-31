@@ -77,6 +77,6 @@ void find(table *t, int i, int j)
 		printf("You select a bad index! Please use read to check it\n");
 		exit(0);
 	}
-	printf("The values you searched to is: %4d", t->val[i][j]);
+	printf("The values you searched to is: %4d\n", t->val[i][j]);
 }
 
